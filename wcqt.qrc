@@ -1,0 +1,78 @@
+<RCC>
+  <qresource prefix="bg">
+    <file>bg/g0.png</file>
+    <file>bg/g1.png</file>
+    <file>bg/g2.png</file>
+    <file>bg/沙纹.png</file>
+    <file>bg/砖纹.png</file>
+    <file>bg/地纹.png</file>
+    <file>bg/石纹.png</file>
+    <file>bg/树纹.png</file>
+    <file>bg/水纹.png</file>
+    <file>bg/雾纹.png</file>
+    <file>bg/叶纹.png</file>
+    <file>bg/水纹.png</file>
+    <file>bg/木纹.png</file>
+    <file>bg/g0.png</file>
+    <file>bg/earth-day-2277368_1920.jpg</file>
+    <file>bg/sun.png</file>
+    <file>bg/伞.jpg</file>
+    <file>bg/christmas-2324155_1920.jpg</file>
+    <file>bg/chrome.png</file>
+    <file>bg/边框.png</file>
+    <file>bg/group3.png</file>
+    <file>bg/group1.png</file>
+    <file>bg/group2.png</file>
+    <file>bg/group4.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>bg/散点图.png</file>
+    <file>bg/饼图.png</file>
+    <file>bg/桑基图.png</file>
+    <file>bg/地理图.png</file>
+    <file>bg/关系图.png</file>
+    <file>bg/树图.png</file>
+    <file>bg/坐标系.png</file>
+    <file>bg/旭日图.png</file>
+    <file>bg/组合图.png</file>
+    <file>bg/象形柱状图.png</file>
+    <file>bg/散点涟漪.png</file>
+    <file>bg/折线图 .png</file>
+    <file>bg/折线图2.png</file>
+    <file>bg/柱形图.png</file>
+    <file>images/动物/1225574.png</file>
+    <file>images/动物/牛.png</file>
+    <file>images/动物/兔子.png</file>
+    <file>images/动物/猩猩.png</file>
+    <file>images/动物/熊.png</file>
+    <file>images/动物/熊猫头.png</file>
+    <file>images/动物/狐狸.png</file>
+    <file>images/动物/可达鸭.png</file>
+    <file>images/动物/鹿.png</file>
+    <file>images/动物/绵羊.png</file>
+  </qresource>
+  <qresource prefix="color">
+    <file>bg/cividis.png</file>
+    <file>bg/inferno.png</file>
+    <file>bg/magma.png</file>
+    <file>bg/plasma.png</file>
+    <file>bg/viridis.png</file>
+  </qresource>
+  <qresource prefix="theme">
+    <file>Theme/1.png</file>
+    <file>Theme/2.png</file>
+    <file>Theme/3.png</file>
+    <file>Theme/4.png</file>
+    <file>Theme/5.png</file>
+    <file>Theme/6.png</file>
+    <file>Theme/7.png</file>
+    <file>Theme/8.png</file>
+    <file>Theme/9.png</file>
+    <file>Theme/10.png</file>
+    <file>Theme/11.png</file>
+    <file>Theme/12.png</file>
+    <file>Theme/13.png</file>
+    <file>Theme/14.png</file>
+    <file>Theme/15.png</file>
+  </qresource>
+</RCC>

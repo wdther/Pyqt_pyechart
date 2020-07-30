@@ -1,0 +1,4987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1504</width>
+    <height>928</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="wcqt.qrc">
+    <normaloff>:/icon/images/动物/可达鸭.png</normaloff>:/icon/images/动物/可达鸭.png</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget
+{
+background-color: rgb(245, 245, 247);
+}
+#groupbox
+{
+background-color: rgb(255, 255, 127);
+}
+QPushButton,QRadioButton，QCheckBox,QLineEdit，QTextEdit，QLabel，QComboBox{
+border-radius: 10px;  
+border: 5px groove gray; 
+border-style: outset;
+}
+
+
+
+</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>50</width>
+    <height>50</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 10px;  
+border: 2px groove gray; 
+border-style: outset;
+	background-color: rgb(0, 170, 255);
+}
+SpinBox{
+background-color: rgb(0, 0, 0);
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(240, 240, 240);</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>词云图</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="331,1171">
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="common">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>328</width>
+               <height>727</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>词源选择</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>331</width>
+                <height>741</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <widget class="QLineEdit" name="txtlineEdit">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>50</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="flieButton">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>47</y>
+                 <width>90</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>选择词源</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="imglineEdit">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>110</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="imgButton">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>107</y>
+                 <width>90</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>选择图片</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="saveButton">
+               <property name="geometry">
+                <rect>
+                 <x>149</x>
+                 <y>213</y>
+                 <width>111</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-top-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="text">
+                <string>保存</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="plotButton">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>213</y>
+                 <width>101</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>绘制</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>100</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <property name="contextMenuPolicy">
+              <enum>Qt::PreventContextMenu</enum>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <attribute name="label">
+              <string>屏蔽词</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>331</width>
+                <height>731</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>请输入不想在词云中出现的词语</string>
+              </property>
+              <widget class="QTextEdit" name="stopwords">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>301</width>
+                 <height>301</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="advanced">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>100</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>高级设置</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>-10</y>
+                <width>331</width>
+                <height>741</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);
+
+</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <widget class="QCheckBox" name="Templatecolor">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>20</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>按照模板颜色绘图</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="FoncobotBox">
+               <property name="geometry">
+                <rect>
+                 <x>200</x>
+                 <y>20</y>
+                 <width>87</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>宋体</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>楷体</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>行书</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Courier New</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QTextEdit" name="mytips">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>490</y>
+                 <width>291</width>
+                 <height>51</height>
+                </rect>
+               </property>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>150</y>
+                 <width>231</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>最大词数</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="spinBox">
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="wrapping">
+                   <bool>false</bool>
+                  </property>
+                  <property name="maximum">
+                   <number>500</number>
+                  </property>
+                  <property name="value">
+                   <number>200</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>200</y>
+                 <width>231</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>缩放倍数</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="scale">
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <number>20</number>
+                  </property>
+                  <property name="value">
+                   <number>2</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>60</y>
+                 <width>231</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>轮廓宽度</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="width">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="maximum">
+                   <number>2000</number>
+                  </property>
+                  <property name="value">
+                   <number>1000</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>100</y>
+                 <width>231</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>轮廓高度</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="height">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="maximum">
+                   <number>2000</number>
+                  </property>
+                  <property name="value">
+                   <number>1000</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>240</y>
+                 <width>231</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label_5">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>轮廓宽度</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="contour_width">
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="maximum">
+                   <number>5</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>280</y>
+                 <width>291</width>
+                 <height>24</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>词频与字体大小相关性</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="relative_scaling">
+                  <property name="styleSheet">
+                   <string notr="true">
+background-color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="decimals">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <double>1.000000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.100000000000000</double>
+                  </property>
+                  <property name="value">
+                   <double>0.500000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>320</y>
+                 <width>391</width>
+                 <height>90</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QLabel" name="label_7">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>选择配色</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="colormap">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="insertPolicy">
+                   <enum>QComboBox::InsertAtCurrent</enum>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>295</width>
+                    <height>60</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>viridis</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/color/bg/viridis.png</normaloff>:/color/bg/viridis.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>plasma</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/color/bg/plasma.png</normaloff>:/color/bg/plasma.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>inferno</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/color/bg/inferno.png</normaloff>:/color/bg/inferno.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>magma</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/color/bg/magma.png</normaloff>:/color/bg/magma.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>cividis</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/color/bg/cividis.png</normaloff>:/color/bg/cividis.png</iconset>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>430</y>
+                 <width>271</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <item>
+                 <widget class="QPushButton" name="plotButton_2">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 10px;  
+border: 2px groove gray; 
+border-style: outset;</string>
+                  </property>
+                  <property name="text">
+                   <string>绘制</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="saveButton_2">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 10px;  
+border: 2px groove gray; 
+border-style: outset;</string>
+                  </property>
+                  <property name="text">
+                   <string>保存</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>100</width>
+               <height>30</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>统计分析</string>
+             </attribute>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>331</width>
+                <height>741</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <widget class="QCheckBox" name="StatisWordFreq">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>10</y>
+                 <width>161</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>根据统计词频绘图</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+              <widget class="QWidget" name="layoutWidget_2">
+               <property name="geometry">
+                <rect>
+                 <x>20</x>
+                 <y>370</y>
+                 <width>271</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QPushButton" name="plotButton_4">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 10px;  
+border: 2px groove gray; 
+border-style: outset;</string>
+                  </property>
+                  <property name="text">
+                   <string>绘制</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="saveButton_3">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-radius: 10px;  
+border: 2px groove gray; 
+border-style: outset;</string>
+                  </property>
+                  <property name="text">
+                   <string>保存</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="tabPosition">
+             <enum>QTabWidget::North</enum>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideNone</enum>
+            </property>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>词云</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="MatplotlibWidget" name="customwidget" native="true">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(250, 238, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="title">
+              <string>统计</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="MatplotlibWidget" name="statistics" native="true">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(250, 238, 255);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>数据可视化</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="331,1171">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QToolBox" name="toolBox_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="tabSpacing">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>330</width>
+             <height>785</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/images/动物/可达鸭.png</normaloff>:/icon/images/动物/可达鸭.png</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>全局配置</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,1,1">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QGroupBox" name="groupBox_13">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>主配置</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3" rowstretch="1,1,1" columnstretch="1,1,1,1,1,1,1" rowminimumheight="1,1,1" columnminimumwidth="1,1,1,1,1,1,1">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="1" column="0" colspan="2">
+                   <widget class="QLabel" name="label_10">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>3ds</family>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>轮廓宽度</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QSpinBox" name="Pwidth">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="maximum">
+                     <number>2000</number>
+                    </property>
+                    <property name="value">
+                     <number>1126</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="3" colspan="2">
+                   <widget class="QLabel" name="label_11">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>3ds</family>
+                      <pointsize>12</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>轮廓高度</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="5" colspan="2">
+                   <widget class="QSpinBox" name="Pheight">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(0, 0, 0);</string>
+                    </property>
+                    <property name="maximum">
+                     <number>2000</number>
+                    </property>
+                    <property name="value">
+                     <number>660</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <spacer name="horizontalSpacer">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>43</width>
+                      <height>28</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="2" column="1" colspan="5">
+                   <widget class="QCheckBox" name="open_in_brower">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>在浏览器中打开</string>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="wcqt.qrc">
+                      <normaloff>:/bg/bg/chrome.png</normaloff>:/bg/bg/chrome.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>30</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="checked">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <spacer name="horizontalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>43</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item row="0" column="3" colspan="4">
+                   <widget class="QLineEdit" name="subtitle">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>此处填入副标题</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0" colspan="3">
+                   <widget class="QLineEdit" name="title">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <property name="text">
+                     <string>此处填入标题</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_14">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>样式配置</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <widget class="QComboBox" name="theme">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>251</width>
+                    <height>54</height>
+                   </rect>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>252</height>
+                   </size>
+                  </property>
+                  <property name="insertPolicy">
+                   <enum>QComboBox::InsertAtCurrent</enum>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>240</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>WHITE</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/1.png</normaloff>:/theme/Theme/1.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>LIGHT</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/2.png</normaloff>:/theme/Theme/2.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>DARK</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/3.png</normaloff>:/theme/Theme/3.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>CHALK</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/4.png</normaloff>:/theme/Theme/4.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>ESSOS</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/6.png</normaloff>:/theme/Theme/6.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>INFOGRAPHIC</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/6.png</normaloff>:/theme/Theme/6.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>MACARONS</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/7.png</normaloff>:/theme/Theme/7.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>PURPLE_PASSION</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/8.png</normaloff>:/theme/Theme/8.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>ROMA</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/9.png</normaloff>:/theme/Theme/9.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>ROMANTIC</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/10.png</normaloff>:/theme/Theme/10.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>SHINE</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/11.png</normaloff>:/theme/Theme/11.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>VINTAGE</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/12.png</normaloff>:/theme/Theme/12.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>WALDEN</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/13.png</normaloff>:/theme/Theme/13.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>WESTEROS</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/14.png</normaloff>:/theme/Theme/14.png</iconset>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>WONDERLAND</string>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="wcqt.qrc">
+                     <normaloff>:/theme/Theme/15.png</normaloff>:/theme/Theme/15.png</iconset>
+                   </property>
+                  </item>
+                 </widget>
+                 <widget class="QCheckBox" name="VisualMap">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>110</y>
+                    <width>171</width>
+                    <height>19</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>开启视觉映射</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="DataZoom">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>140</y>
+                    <width>171</width>
+                    <height>19</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>开启区域缩放</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="ToolBox">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>170</y>
+                    <width>171</width>
+                    <height>19</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>开启工具箱</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="x2y">
+                  <property name="geometry">
+                   <rect>
+                    <x>210</x>
+                    <y>110</y>
+                    <width>101</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>X-Y翻转</string>
+                  </property>
+                 </widget>
+                 <widget class="QCheckBox" name="TimeLineOn">
+                  <property name="geometry">
+                   <rect>
+                    <x>210</x>
+                    <y>140</y>
+                    <width>101</width>
+                    <height>21</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>时间线</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_15">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>模式</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <widget class="QRadioButton" name="online">
+                  <property name="geometry">
+                   <rect>
+                    <x>160</x>
+                    <y>40</y>
+                    <width>141</width>
+                    <height>41</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>在线模式</string>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                 <widget class="QRadioButton" name="offline">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>40</y>
+                    <width>131</width>
+                    <height>41</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>离线模式</string>
+                  </property>
+                  <property name="checked">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <property name="geometry">
+            <rect>
+             <x>-72</x>
+             <y>0</y>
+             <width>151</width>
+             <height>53</height>
+            </rect>
+           </property>
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/images/动物/狐狸.png</normaloff>:/icon/images/动物/狐狸.png</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>系列配置</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>标签配置项</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QSpinBox" name="font_size">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="minimum">
+                <number>10</number>
+               </property>
+               <property name="maximum">
+                <number>30</number>
+               </property>
+               <property name="value">
+                <number>15</number>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_12">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>101</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>文字大小</string>
+               </property>
+              </widget>
+              <widget class="QFontComboBox" name="font_family">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>90</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_13">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>90</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>文字字体</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="color">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>210</y>
+                 <width>121</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>设置颜色</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_19">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>140</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>位置</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="position">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>140</y>
+                 <width>171</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>top</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>bottom</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>left</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>right</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>inside</string>
+                </property>
+               </item>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_11">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>线样式配置项</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QLabel" name="label_14">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>100</y>
+                 <width>101</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>弯曲度</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="line_width">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>150</y>
+                 <width>111</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="minimum">
+                <number>0</number>
+               </property>
+               <property name="maximum">
+                <number>20</number>
+               </property>
+               <property name="value">
+                <number>1</number>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_16">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>150</y>
+                 <width>101</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>线宽</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_17">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>60</y>
+                 <width>101</width>
+                 <height>23</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>3ds</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>透明度</string>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="opacity">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>60</y>
+                 <width>111</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="curve">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>100</y>
+                 <width>111</width>
+                 <height>22</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="decimals">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <double>5.000000000000000</double>
+               </property>
+               <property name="singleStep">
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="groupBox_12">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>标记样式配置项</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>121</width>
+                 <height>19</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>标记点</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBox_5">
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>40</y>
+                 <width>121</width>
+                 <height>19</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>标记线</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="position_2">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>80</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>min</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>max</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>average</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QComboBox" name="Treesymbol_2">
+               <property name="geometry">
+                <rect>
+                 <x>160</x>
+                 <y>80</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>圆</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>矩形</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>圆角矩形</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>三角形</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>钻石形</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>针形</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>箭头形</string>
+                </property>
+               </item>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="page_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>100</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/images/动物/熊猫头.png</normaloff>:/icon/images/动物/熊猫头.png</iconset>
+           </attribute>
+           <attribute name="label">
+            <string>坐标系配置</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QGroupBox" name="groupBox_23">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-image: url(:/bg/bg/g1.png);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="title">
+               <string>主配置</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QLineEdit" name="YAxis">
+               <property name="geometry">
+                <rect>
+                 <x>170</x>
+                 <y>30</y>
+                 <width>141</width>
+                 <height>26</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>此处填入y轴</string>
+               </property>
+              </widget>
+              <widget class="QLineEdit" name="XAxis">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>141</width>
+                 <height>27</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>此处填入x轴</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="pyecharts">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Rounded</enum>
+          </property>
+          <property name="currentIndex">
+           <number>6</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="documentMode">
+           <bool>false</bool>
+          </property>
+          <property name="tabsClosable">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="Graph">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/关系图.png</normaloff>:/icon/bg/关系图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>关系图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="600,140">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWebEngineView" name="qwebengine_Graph" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/group1.png);
+</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="Graphplot">
+               <property name="geometry">
+                <rect>
+                 <x>440</x>
+                 <y>100</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="GraphPlotData">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>70</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="GraphplotDataTemp">
+               <property name="geometry">
+                <rect>
+                 <x>140</x>
+                 <y>20</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="layoutcombox">
+               <property name="geometry">
+                <rect>
+                 <x>840</x>
+                 <y>20</y>
+                 <width>221</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="insertPolicy">
+                <enum>QComboBox::InsertAtBottom</enum>
+               </property>
+               <item>
+                <property name="text">
+                 <string>环绕</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>力引导</string>
+                </property>
+               </item>
+              </widget>
+              <widget class="QLabel" name="label_8">
+               <property name="geometry">
+                <rect>
+                 <x>840</x>
+                 <y>70</y>
+                 <width>72</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>引力因子</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_9">
+               <property name="geometry">
+                <rect>
+                 <x>840</x>
+                 <y>110</y>
+                 <width>72</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>斥力因子</string>
+               </property>
+              </widget>
+              <widget class="QSpinBox" name="repulsion">
+               <property name="geometry">
+                <rect>
+                 <x>930</x>
+                 <y>110</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="maximum">
+                <number>10000</number>
+               </property>
+               <property name="value">
+                <number>1000</number>
+               </property>
+              </widget>
+              <widget class="QDoubleSpinBox" name="gravity">
+               <property name="geometry">
+                <rect>
+                 <x>930</x>
+                 <y>70</y>
+                 <width>131</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 0, 0);</string>
+               </property>
+               <property name="decimals">
+                <number>2</number>
+               </property>
+               <property name="maximum">
+                <double>1.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.100000000000000</double>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Sankey">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/桑基图.png</normaloff>:/icon/bg/桑基图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>桑基图</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_6" rowstretch="600,145">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QWebEngineView" name="qwebengine_Sankey" native="true">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="groupBox_16">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/group3.png);
+</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="SankeyPlot">
+               <property name="geometry">
+                <rect>
+                 <x>420</x>
+                 <y>30</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="SankeyplotDataTemp">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="SankeyPlotData">
+               <property name="geometry">
+                <rect>
+                 <x>220</x>
+                 <y>30</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Sunburst">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/旭日图.png</normaloff>:/icon/bg/旭日图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>旭日图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2" stretch="600,140">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWebEngineView" name="qwebengine_Sunburst" native="true">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+
+background-image: url(:/bg/bg/group2.png);</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="Sunburstplot">
+               <property name="geometry">
+                <rect>
+                 <x>720</x>
+                 <y>20</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="Sunburstplot_2">
+               <property name="geometry">
+                <rect>
+                 <x>60</x>
+                 <y>20</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="PiePlotData_4">
+               <property name="geometry">
+                <rect>
+                 <x>300</x>
+                 <y>20</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Tree">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/树图.png</normaloff>:/icon/bg/树图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>树图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7" stretch="600,145">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWebEngineView" name="qwebengine_Tree" native="true">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_17">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/group3.png);
+</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="Treeplot">
+               <property name="geometry">
+                <rect>
+                 <x>970</x>
+                 <y>100</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="TreePlotDataTemp">
+               <property name="geometry">
+                <rect>
+                 <x>740</x>
+                 <y>20</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="TreePlotData">
+               <property name="geometry">
+                <rect>
+                 <x>850</x>
+                 <y>60</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_18">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>601</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string>Tree</string>
+               </property>
+               <widget class="QRadioButton" name="TreeB">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>91</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>树图</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                 <rect>
+                  <x>420</x>
+                  <y>20</y>
+                  <width>81</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>3ds</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>符号大小</string>
+                </property>
+               </widget>
+               <widget class="QSpinBox" name="symbol_size">
+                <property name="geometry">
+                 <rect>
+                  <x>510</x>
+                  <y>20</y>
+                  <width>81</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="minimum">
+                 <number>10</number>
+                </property>
+                <property name="maximum">
+                 <number>30</number>
+                </property>
+                <property name="value">
+                 <number>15</number>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="Treelayout">
+                <property name="geometry">
+                 <rect>
+                  <x>180</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>宋体</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="insertPolicy">
+                 <enum>QComboBox::InsertAtBottom</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>正交</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>径向</string>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QComboBox" name="Treesymbol">
+                <property name="geometry">
+                 <rect>
+                  <x>300</x>
+                  <y>20</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>宋体</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="insertPolicy">
+                 <enum>QComboBox::InsertAtBottom</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>空心圆</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>圆</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>矩形</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>圆角矩形</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>三角形</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>钻石形</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>针形</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>箭头形</string>
+                 </property>
+                </item>
+               </widget>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_19">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>90</y>
+                 <width>601</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="title">
+                <string>TreeMap</string>
+               </property>
+               <widget class="QRadioButton" name="TreemapB">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>矩形树图</string>
+                </property>
+               </widget>
+               <widget class="QSpinBox" name="leaf_depth">
+                <property name="geometry">
+                 <rect>
+                  <x>510</x>
+                  <y>20</y>
+                  <width>81</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(0, 0, 0);</string>
+                </property>
+                <property name="minimum">
+                 <number>0</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>2</number>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>20</y>
+                  <width>91</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>3ds</family>
+                  <pointsize>12</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>索引深度</string>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Geo">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/地理图.png</normaloff>:/icon/bg/地理图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>地理图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8" stretch="600,145">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWebEngineView" name="qwebengine_Geo" native="true">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_20">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/group4.png);</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="GeoPlot">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="GeoplotDataTemp">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="GeoPlotData">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Pie">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/饼图.png</normaloff>:/icon/bg/饼图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>饼图</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4" stretch="600,145">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QWebEngineView" name="qwebengine_Pie" native="true">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(170, 170, 127);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_8">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/group4.png);</string>
+              </property>
+              <property name="title">
+               <string>统计数据</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <widget class="QPushButton" name="PiePlot">
+               <property name="geometry">
+                <rect>
+                 <x>460</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>更新图表</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="PieplotDataTemp">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>查看数据模板</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="PiePlotData">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>40</y>
+                 <width>171</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(0, 170, 0);</string>
+               </property>
+               <property name="text">
+                <string>选择数据</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="coordinate">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/坐标系.png</normaloff>:/icon/bg/坐标系.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>笛卡尔坐标系</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QTabWidget" name="tabWidget_3">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::TabFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::DefaultContextMenu</enum>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="tabPosition">
+               <enum>QTabWidget::East</enum>
+              </property>
+              <property name="tabShape">
+               <enum>QTabWidget::Triangular</enum>
+              </property>
+              <property name="currentIndex">
+               <number>4</number>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="elideMode">
+               <enum>Qt::ElideLeft</enum>
+              </property>
+              <property name="usesScrollButtons">
+               <bool>true</bool>
+              </property>
+              <property name="documentMode">
+               <bool>false</bool>
+              </property>
+              <property name="tabsClosable">
+               <bool>false</bool>
+              </property>
+              <property name="tabBarAutoHide">
+               <bool>false</bool>
+              </property>
+              <widget class="QWidget" name="Line">
+               <attribute name="icon">
+                <iconset resource="wcqt.qrc">
+                 <normaloff>:/icon/bg/折线图2.png</normaloff>:/icon/bg/折线图2.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>折线/面积图</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_9" stretch="600,145">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWebEngineView" name="qwebengine_Line" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_21">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/树纹.png);</string>
+                  </property>
+                  <property name="title">
+                   <string>统计数据</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QPushButton" name="LinePlot">
+                   <property name="geometry">
+                    <rect>
+                     <x>420</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>更新图表</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="LineplotDataTemp">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>查看数据模板</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="LinePlotData">
+                   <property name="geometry">
+                    <rect>
+                     <x>220</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>选择数据</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="Scatter">
+               <attribute name="icon">
+                <iconset resource="wcqt.qrc">
+                 <normaloff>:/icon/bg/散点图.png</normaloff>:/icon/bg/散点图.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>散点图</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_10" stretch="600,145">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWebEngineView" name="qwebengine_Scatter" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_22">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/沙纹.png);</string>
+                  </property>
+                  <property name="title">
+                   <string>统计数据</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QPushButton" name="ScatterPlot">
+                   <property name="geometry">
+                    <rect>
+                     <x>420</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>更新图表</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="ScatterplotDataTemp">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>查看数据模板</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="ScatterPlotData">
+                   <property name="geometry">
+                    <rect>
+                     <x>220</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>选择数据</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="EffectScatter">
+               <attribute name="icon">
+                <iconset resource="wcqt.qrc">
+                 <normaloff>:/icon/bg/散点涟漪.png</normaloff>:/icon/bg/散点涟漪.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>散点涟漪图</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_13" stretch="600,140">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWebEngineView" name="qwebengine_EffectScatter" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_25">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/石纹.png);</string>
+                  </property>
+                  <property name="title">
+                   <string>统计数据</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QPushButton" name="EffectScatterPlot">
+                   <property name="geometry">
+                    <rect>
+                     <x>420</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>更新图表</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="EffectScatterplotDataTemp">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>查看数据模板</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="EffectScatterplotData">
+                   <property name="geometry">
+                    <rect>
+                     <x>220</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>选择数据</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="Bar">
+               <attribute name="icon">
+                <iconset resource="wcqt.qrc">
+                 <normaloff>:/icon/bg/柱形图.png</normaloff>:/icon/bg/柱形图.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>柱状图/条形图</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_12" stretch="600,145">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWebEngineView" name="qwebengine_Bar" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_29">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/雾纹.png);</string>
+                  </property>
+                  <property name="title">
+                   <string>统计数据</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QPushButton" name="BarPlot">
+                   <property name="geometry">
+                    <rect>
+                     <x>420</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>更新图表</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="BarplotDataTemp">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>查看数据模板</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="BarPlotData">
+                   <property name="geometry">
+                    <rect>
+                     <x>220</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>选择数据</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="PictorialBar">
+               <attribute name="icon">
+                <iconset resource="wcqt.qrc">
+                 <normaloff>:/icon/bg/象形柱状图.png</normaloff>:/icon/bg/象形柱状图.png</iconset>
+               </attribute>
+               <attribute name="title">
+                <string>象形柱状图</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_11" stretch="600,145">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWebEngineView" name="qwebengine_PictorialBar" native="true">
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_24">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-image: url(:/bg/bg/地纹.png);</string>
+                  </property>
+                  <property name="title">
+                   <string>统计数据</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <widget class="QPushButton" name="PictorialBarPlot">
+                   <property name="geometry">
+                    <rect>
+                     <x>420</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>更新图表</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="PictorialBarplotDataTemp">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>查看数据模板</string>
+                   </property>
+                  </widget>
+                  <widget class="QPushButton" name="PictorialBarPlotData">
+                   <property name="geometry">
+                    <rect>
+                     <x>220</x>
+                     <y>30</y>
+                     <width>171</width>
+                     <height>41</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(0, 170, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>选择数据</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="combination">
+           <attribute name="icon">
+            <iconset resource="wcqt.qrc">
+             <normaloff>:/icon/bg/组合图.png</normaloff>:/icon/bg/组合图.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>组合图表</string>
+           </attribute>
+           <widget class="QTextEdit" name="textEdit">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>461</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;待定：&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;参考：&lt;/span&gt;&lt;a href=&quot;https://gallery.echartsjs.com/editor.html?c=x2Z4NzPSRh&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;https://gallery.echartsjs.com/editor.html?c=x2Z4NzPSRh&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1504</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI Light</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="about">
+   <property name="icon">
+    <iconset resource="wcqt.qrc">
+     <normaloff>:/icon/images/动物/狐狸.png</normaloff>:/icon/images/动物/狐狸.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">PyQt5.QtWebEngineWidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="wcqt.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>flieButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>textbutton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>imgButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>imagebutton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Cloudplot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveimg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>558</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Cloudplot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>560</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveimg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>560</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>colormap</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>colorchanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>454</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>640</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>plotButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Cloudplot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>607</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveimg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>847</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Graphplot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Graph_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>943</x>
+     <y>897</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>766</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Sunburstplot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Sunburst_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1223</x>
+     <y>817</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1161</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PiePlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Pie_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>964</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PieplotDataTemp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Pie_plotDataTemp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1173</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PiePlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Pie_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1162</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GraphPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Graph_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>753</x>
+     <y>867</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>845</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GraphplotDataTemp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Graph_plotDataTemp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>643</x>
+     <y>817</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>color</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Color_set()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>77</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>466</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TreePlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Tree_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1354</x>
+     <y>859</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1499</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Treeplot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Tree_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1474</x>
+     <y>899</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1499</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PiePlotData_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Sunburst_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>803</x>
+     <y>817</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1499</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TreeB</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TreeorMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>829</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TreemapB</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>MaporTree()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>899</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GeoPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Geo_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>964</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GeoPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Geo_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>754</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BarPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Bar_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>841</x>
+     <y>806</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>751</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LinePlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Line_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>826</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LinePlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Line_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>826</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScatterPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Scatter_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>826</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>502</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ScatterPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Scatter_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>826</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EffectScatterPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>EffectScatter_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>405</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EffectScatterplotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>EffectScatter_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1503</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PictorialBarPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictorialBar_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1507</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PictorialBarPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictorialBar_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>726</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1508</x>
+     <y>707</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BarPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Bar_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>636</x>
+     <y>805</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1509</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SankeyPlotData</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Sankey_plotData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>813</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1514</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SankeyPlot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Sankey_plot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>835</x>
+     <y>804</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1514</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>aboutthis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>751</x>
+     <y>463</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Cloudplot()</slot>
+  <slot>textbutton()</slot>
+  <slot>imagebutton()</slot>
+  <slot>saveimg()</slot>
+  <slot>colorchanged()</slot>
+  <slot>wordstatistics()</slot>
+  <slot>Graph_plot()</slot>
+  <slot>Sunburst_plot()</slot>
+  <slot>Pie_plot()</slot>
+  <slot>Pie_plotDataTemp()</slot>
+  <slot>Pie_plotData()</slot>
+  <slot>Bar_plot()</slot>
+  <slot>Graph_plotData()</slot>
+  <slot>Graph_plotDataTemp()</slot>
+  <slot>Color_set()</slot>
+  <slot>Sankey_plot()</slot>
+  <slot>Sankey_plotData()</slot>
+  <slot>Tree_plot()</slot>
+  <slot>Tree_plotData()</slot>
+  <slot>Sunburst_plotData()</slot>
+  <slot>TreeorMap()</slot>
+  <slot>MaporTree()</slot>
+  <slot>Geo_plot()</slot>
+  <slot>Geo_plotData()</slot>
+  <slot>Line_plot()</slot>
+  <slot>Line_plotData()</slot>
+  <slot>Scatter_plot()</slot>
+  <slot>Scatter_plotData()</slot>
+  <slot>EffectScatter_plot()</slot>
+  <slot>EffectScatter_plotData()</slot>
+  <slot>PictorialBar_plot()</slot>
+  <slot>PictorialBar_plotData()</slot>
+  <slot>Bar_plotData()</slot>
+  <slot>aboutthis()</slot>
+ </slots>
+</ui>
